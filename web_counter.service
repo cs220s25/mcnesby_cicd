@@ -4,8 +4,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-ExecStart=/mcnesby_cicd/.venv/bin/gunicorn --chdir /mcnesby_cicd --bind 
-0.0.0.0:80 --workers 2 app:app
+ExecStart=/mcnesby_cicd/.venv/bin/gunicorn --chdir /mcnesby_cicd --bind 0.0.0.0:80 --workers 2 app:app
 
 [Install]
 WantedBy=multi-user.target
