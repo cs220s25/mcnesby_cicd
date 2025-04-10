@@ -26,7 +26,7 @@ def hello():
     count = read_count()    
     count += 1
     save_count(count);
-    return "<h1 style='color:pink'>Hello World! {}</h1>".format(count)
+    return "<h1 style='color:purple'>Hello World! {}</h1>".format(count)
 
 
 if __name__ == "__main__":
